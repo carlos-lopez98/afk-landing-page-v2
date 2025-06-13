@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for Cayda brand */
+.recoleta-heading {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.inter-body {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+.cayda-gradient {
+  background: linear-gradient(135deg, #F9F6F0 0%, #D8AFA0 100%);
+}
+
+.cayda-card {
+  background: rgba(249, 246, 240, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(216, 175, 160, 0.1);
+}
+
+.cayda-button-primary {
+  background: linear-gradient(135deg, #D8AFA0 0%, #E8A87C 100%);
+  transition: all 0.3s ease;
+}
+
+.cayda-button-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(216, 175, 160, 0.25);
+}
+
+.cayda-input {
+  background: rgba(249, 246, 240, 0.6);
+  border: 2px solid rgba(151, 166, 141, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cayda-input:focus {
+  border-color: #D8AFA0;
+  background: rgba(249, 246, 240, 0.9);
+  box-shadow: 0 0 0 3px rgba(216, 175, 160, 0.1);
+}
+
+.cayda-badge {
+  background: linear-gradient(135deg, #E8A87C 0%, #6D9DAA 100%);
+}
+
+/* Smooth animations */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
